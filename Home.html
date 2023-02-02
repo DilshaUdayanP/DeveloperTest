@@ -16,6 +16,30 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Custom Style Import -->
+    <link rel="stylesheet" href="Assets/Style/HomePage.Css" />
+
+    <!-- Custom Script Import -->
+    <script>
+        function OnewaybtnClick() {
+            document.getElementById('OneWayTrip').style.display = "block";
+            document.getElementById('TwoWayTrip').style.display = "none";
+            document.getElementById('TwoWaybtn').style.background = "transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box";
+            document.getElementById('OneWaybtn').style.background = "#fff";
+            document.getElementById('TwoWaybtn').style.color = "#319ECE";
+            document.getElementById('OneWaybtn').style.color = "#000";
+        }
+
+        function TwowaybtnClick() {
+            document.getElementById('OneWayTrip').style.display = "none";
+            document.getElementById('TwoWayTrip').style.display = "block";
+            document.getElementById('OneWaybtn').style.background = "transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box";
+            document.getElementById('TwoWaybtn').style.background = "#fff";
+            document.getElementById('TwoWaybtn').style.color = "#000";
+            document.getElementById('OneWaybtn').style.color = "#319ECE";
+        }
+    </script>
+
     <title>Home Page</title>
 </head>
 
@@ -59,6 +83,202 @@
         </div>
     </nav>
 
+    <div class="jumbotron jumbotron-fluid DivStyle">
+        <div class="container">
+            <img src="Assets/Images/JumbotronImg.svg" class="img-fluid rounded mx-auto d-block" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-12">
+                <div class="card text-center mb-5 CardmarginTop" style="margin-top: -20%">
+                    <!-- <div >
+                        <button type="button" class="btn btn-secondary border-radius-50">Left</button>
+                        <button type="button" class="btn btn-secondary border-radius-50">Middle</button>
+                    </div> -->
+                    <div class="card-body pt-4">
+                        <a href="#" id="OneWaybtn" class="btn btn-light onewaybtn"
+                            onclick="OnewaybtnClick()">ONE-WAY</a>
+                        <a href="#" id="TwoWaybtn" class="btn btn-light twowaybtn" onclick="TwowaybtnClick()">ROUND
+                            TRIP</a>
+                        <div id="OneWayTrip"
+                            style="background-color: red;min-height: 50px;min-width: 50px;display: block;">
+
+                        </div>
+                        <div id="TwoWayTrip"
+                            style="background-color: yellow;min-height: 50px;min-width: 50px;display:none;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-lg-start text-white" style="background: #101F33 0% 0% no-repeat padding-box;font-size: 16px;">
+        <div class="p-5 pb-0">
+            <div class="row">
+                <!-- column 1 start -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 pb-4">
+                    <div class="shadow-1-strong d-flex align-items-start justify-content-start mb-4 mx-auto">
+                        <img src="Assets/Images/Logo.svg" loading="lazy" />
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestiae modi cum ipsam ad, illo possimus laborum ut
+                        reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                        Reiciendis assumenda iusto sapiente inventore animi?
+                    </p>
+
+                    <div>
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- column 1 ends -->
+
+                <!-- column 2 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">OUR PRODUCTS
+                    </h5>
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li>
+                            <a href="#!" class="text-white">Online Flight Booking</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Online Hotel Booking</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Domestic Airlines</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Top Airline</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Routes Partner Programs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 2 ends -->
+
+                <!-- column 3 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">CORPORATE</h5>
+                    <!--          -->
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li>
+                            <a href="#!" class="text-white">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Register Your Property</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 3 ends -->
+
+                <!-- column 4 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">HOT AIRLINES</h5>
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li>
+                            <a href="#!" class="text-white">IndiGo</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Go First</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">SpiceJet</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">AirAsia</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Vistara</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Air India</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 4 ends -->
+
+                <!-- column 5 start -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 imgsize">
+                    <h5 class="text-uppercase">PAYMENT MODE</h5>
+
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/2560px-JCB_logo.svg/2560px-JCB_logo.svg.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71354/Group 71354.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71355/Group 71355.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71356/Group 71356.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Mask Group 10/Mask Group 10.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/MasterCard_Logo.svg (1)/MasterCard_Logo.svg (1).png"></a>
+                    <hr style="background-color: rgb(74, 72, 72);" />
+
+                    <div class="d-flex justify-content-center row row">
+                        <span>
+                            <span>Book Tickets Faster</span>
+                            <p>Download Our Mobile Apps</p>
+                        </span>
+                        <span class="ml-3">
+                            <a href="#!" role="button">
+                                <img src="Assets/Images/GooglePlay/Group 71359.png"></a>
+                        </span>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);font-size: 10px;">
+                        Copyright © 2022.
+                        <a class="text-white" href="#"> Relipay Travels All Rights Reserved</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <!-- column 5 ends -->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

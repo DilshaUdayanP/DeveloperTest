@@ -1,0 +1,74 @@
+.DivStyle {
+    background: transparent linear-gradient(90deg, #0077AC 0%, #112E55 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+}
+
+.box {
+    opacity: 0.8;
+}
+
+.stack-top {
+    z-index: 9;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+
+.card .twowaybtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(98%, -50%);
+    border-radius: 30px;
+    background: transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #0000000D;
+    color: #319ECE
+}
+
+.card .onewaybtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(19%, -50%);
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0000000D;
+    color: #000;
+}
+
+.add_space>li {
+    padding-bottom: 10px;
+}
+
+.imgsize>a>img {
+    height: 9%;
+    width: 15%;
+}
+
+/* Media query */
+@media (max-width: 800px) {
+
+    .imgsize>a>img {
+        height: 15%;
+        width: 15%;
+    }
+
+    /* this class is not using currently */
+    .no-margin-mobile {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* this class is to maintain the overlap of from and to card */
+    .CardmarginTop {
+        margin-top: -40% !important;
+    }
+}
