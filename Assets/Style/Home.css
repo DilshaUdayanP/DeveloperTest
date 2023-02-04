@@ -1,3 +1,14 @@
+/*Common css*/
+.removePadding {
+    padding: 0;
+}
+
+.XSmallFontSize {
+    font-size: x-small;
+}
+
+/*Common css*/
+
 /* Top Menu with background */
 .responsive-width {
     font-size: 1vw;
@@ -110,6 +121,10 @@
 
     .MediumFontSize {
         font-size: 2vw;
+    }
+
+    .XSmallFontSize {
+        font-size: xx-small;
     }
 
     /* common */
