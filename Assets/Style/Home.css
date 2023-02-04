@@ -1,0 +1,118 @@
+/* Top Menu with background */
+.responsive-width {
+    font-size: 1vw;
+}
+
+.Top_Menu .btn-group {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.Top_Menu {
+    /* not using */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%, 247%);
+}
+
+.DivStyle {
+    background: transparent linear-gradient(90deg, #0077AC 0%, #112E55 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* hover icon pop */
+.thumb img {
+    margin-left: 1em;
+}
+
+.thumbwrap {
+    position: relative;
+}
+
+.thumb span {
+    position: absolute;
+    visibility: hidden;
+}
+
+.thumb:hover,
+.thumb:hover span {
+    visibility: visible;
+    bottom: 2em;
+    left: 0;
+    z-index: 1;
+}
+
+/* hover icon pop */
+
+/* dropdown  */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/* dropdown  */
+
+/* Top Menu with background */
+
+
+/* Search Section */
+.card .twowaybtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(98%, -50%);
+    border-radius: 30px;
+    background: transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #0000000D;
+    color: #319ECE
+}
+
+.card .Submitbtn {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #0000000D;
+}
+
+.card .onewaybtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(19%, -50%);
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0000000D;
+    color: #000;
+}
+
+
+/* Search Section */
+
+
+
+
+/* Media query */
+@media (max-width: 470px) {
+
+    /* common */
+    .SmallFontSize {
+        font-size: 1.5vw;
+    }
+
+    .LargeFontSize {
+        font-size: 4vw;
+    }
+
+    .MediumFontSize {
+        font-size: 2vw;
+    }
+
+    /* common */
+}
+
+/* Media query */

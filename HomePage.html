@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style Import -->
+    <link rel="stylesheet" href="Assets/Style/Home.css" />
+
+    <!-- Custom Script Import -->
+    <script>
+        function OnewaybtnClick() {
+            document.getElementById('TwoWaybtn').style.background = "transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box";
+            document.getElementById('OneWaybtn').style.background = "#fff";
+            document.getElementById('TwoWaybtn').style.color = "#319ECE";
+            document.getElementById('OneWaybtn').style.color = "#000";
+            event.preventDefault();
+        }
+
+        function TwowaybtnClick() {
+            document.getElementById('OneWaybtn').style.background = "transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box";
+            document.getElementById('TwoWaybtn').style.background = "#fff";
+            document.getElementById('TwoWaybtn').style.color = "#000";
+            document.getElementById('OneWaybtn').style.color = "#319ECE";
+            event.preventDefault();
+        }
+
+        function Submitbtn() {
+
+        }
+
+    </script>
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <!-- Navigation bar with handburger menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="Assets/Images/Logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ContactDrop" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-headset"></i>
+                        +91 8957022730
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ContactDrop">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="Accountdrop" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="Assets/Images/ProfilePics/Rectangle 24390.png" width="30" height="30"
+                            class="d-inline-block align-top" alt="">
+                        Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Accountdrop">
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+                </form>
+        </div>
+    </nav>
+    <!-- Navigation bar with handburger menu -->
+
+    <div class="jumbotron-fluid DivStyle">
+        <div class="container">
+            <!-- Top Menu -->
+            <div class="d-flex align-items-start btn-group btn-group-sm " role="group" aria-label="Basic example">
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase responsive-width">FLIGHT</button>
+                        <span><img src="Assets/Images/Flight.svg" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase responsive-width">Hotels</button>
+                        <span><img src="Assets/Images/Hotel.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase responsive-width">FLIGHT
+                            +
+                            Hotel</button>
+                        <span><img src="Assets/Images/Airplane.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase  responsive-width">Train</button>
+                        <span><img src="Assets/Images/train.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase  responsive-width">Bus</button>
+                        <span><img src="Assets/Images/bus.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase  responsive-width">Holiday</button>
+                        <span><img src="Assets/Images/holiday.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase  responsive-width">Cabs</button>
+                        <span><img src="Assets/Images/cab.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="thumbwrap">
+                    <a class="thumb" href="#">
+                        <button type="button"
+                            class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase  responsive-width">Cruise</button>
+                        <span><img src="Assets/Images/ship.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <button id="btnGroupDrop" type="button"
+                        class="btn btn-sm btn-md btn-light btn-outline-info text-uppercase dropdown-toggle  responsive-width"
+                        data-toggle="dropdown">
+                        More
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop">
+                        <li><a class="dropdown-item" href="#">Charts</a></li>
+                        <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                        <li><a class="dropdown-item" href="#">Offers</a></li>
+                        <li><a class="dropdown-item" href="#">Coperate Travels</a></li>
+                        <li><a class="dropdown-item" href="#">Agent Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="Assets/Images/JumbotronImg.svg" class="img-fluid rounded mx-auto d-block" alt="">
+            </div>
+            <!-- Top Menu -->
+        </div>
+    </div>
+    <!-- Trip Search Section -->
+    <div class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-12">
+                <div class="card text-center mb-5" style="margin-top: -20%">
+                    <div class="card-body pt-4">
+                        <a href="#" id="OneWaybtn" class="btn btn-light onewaybtn"
+                            onclick="OnewaybtnClick()">ONE-WAY</a>
+                        <a href="#" id="TwoWaybtn" class="btn btn-light twowaybtn"
+                            onclick="TwowaybtnClick()">ROUNDTRIP</a>
+                        <a href="#" id="Submitbtn" class="btn btn-success Submitbtn" onclick="Submitbtn()">Search</a>
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div class="card-body  d-flex flex-row">
+                        <div class="col-2  d-flex flex-column">
+                            <span class="text-capitalize MediumFontSize text-nowrap text-left text-muted">From</span>
+                            <h4 class=" text-left LargeFontSize text-nowrap font-weight-bold">Delhi</h4>
+                            <p class="text-truncate text-left SmallFontSize">[DEL] Indira Gandhi International Airport
+                            </p>
+                        </div>
+                        <div class="col-1 d-flex align-content-center justify-content-center align-items-center">
+                            <a href="#"><i class="fa-solid LargeFontSize fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <div class=" col-2 d-flex flex-column">
+                            <span class="text-capitalize MediumFontSize text-nowrap text-left text-muted">To</span>
+                            <h4 class=" text-left LargeFontSize text-nowrap font-weight-bold">Mumbai</h4>
+                            <p class="text-truncate text-left SmallFontSize">[BOM] Chhatrapati Shivaji Maharaj
+                                International Airport
+                            </p>
+                        </div>
+                        <div class="col-2 d-flex flex-row">
+                            <div class="d-flex flex-column">
+
+                            </div>
+                            <div class='col-sm-1'>
+                                <span><i class="fa-solid fa-calendar-days"></i></span>
+                            </div>
+
+                        </div>
+                        <div class="col-2 d-flex flex-row">
+                            <div class="d-flex flex-column">
+
+                            </div>
+
+                        </div>
+                        <div class="col-2 d-flex flex-column">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Trip Search Section -->
+
+
+        <!-- Explore More -->
+
+        <!-- Explore More -->
+
+
+        <!-- Exclusive Offers -->
+
+        <!-- Exclusive Offers -->
+
+
+        <!-- Travel Blog -->
+
+        <!-- Travel Blog -->
+    </div>
+    <!-- Footer -->
+    <footer class="text-lg-start text-white" style="background: #101F33 0% 0% no-repeat padding-box;font-size: 16px;">
+        <div class="p-5 pb-0">
+            <div class="row">
+                <!-- column 1 start -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 pb-4">
+                    <div class="shadow-1-strong d-flex align-items-start justify-content-start mb-4 mx-auto">
+                        <img src="Assets/Images/Logo.svg" loading="lazy" />
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestiae modi cum ipsam ad, illo possimus laborum ut
+                        reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                        Reiciendis assumenda iusto sapiente inventore animi?
+                    </p>
+
+                    <div>
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- column 1 ends -->
+
+                <!-- column 2 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">OUR PRODUCTS
+                    </h5>
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li><a href="#!" class="text-white">Online Flight Booking</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Online Hotel Booking</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Domestic Airlines</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Top Airline</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Routes Partner Programs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 2 ends -->
+
+                <!-- column 3 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">CORPORATE</h5>
+                    <!--          -->
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li><a href="#!" class="text-white">FAQs</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Terms & Conditions</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Privacy</a>
+                        </li>
+                        <li><a href="#!" class="text-white">About Us</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Contact Us</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Careers</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Blog</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Register Your Property</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 3 ends -->
+
+                <!-- column 4 start -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0 pb-4">
+                    <h5 class="text-uppercase">HOT AIRLINES</h5>
+                    <ul class="list-unstyled mb-0 add_space">
+                        <li><a href="#!" class="text-white">IndiGo</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Go First</a>
+                        </li>
+                        <li><a href="#!" class="text-white">SpiceJet</a>
+                        </li>
+                        <li><a href="#!" class="text-white">AirAsia</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Vistara</a>
+                        </li>
+                        <li><a href="#!" class="text-white">Air India</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column 4 ends -->
+
+                <!-- column 5 start -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 imgsize">
+                    <h5 class="text-uppercase">PAYMENT MODE</h5>
+
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/2560px-JCB_logo.svg/2560px-JCB_logo.svg.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71354/Group 71354.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71355/Group 71355.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Group 71356/Group 71356.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/Mask Group 10/Mask Group 10.png"></a>
+                    <a href="#!" role="button">
+                        <img src="Assets/Images/Payment/MasterCard_Logo.svg (1)/MasterCard_Logo.svg (1).png"></a>
+                    <hr style="background-color: rgb(74, 72, 72);" />
+
+                    <div class="d-flex justify-content-center row row">
+                        <span><span>Book Tickets Faster</span>
+                            <p>Download Our Mobile Apps</p>
+                        </span>
+                        <span class="ml-3"><a href="#!" role="button"> <img
+                                    src="Assets/Images/GooglePlay/Group 71359.png"></a>
+                        </span>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);font-size: 10px;">
+                        Copyright © 2022.
+                        <a class="text-white" href="#"> Relipay Travels All Rights Reserved</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <!-- column 5 ends -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

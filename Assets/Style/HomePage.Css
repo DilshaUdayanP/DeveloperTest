@@ -123,35 +123,6 @@ h1 {
 }
 
 
-.card .twowaybtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(98%, -50%);
-    border-radius: 30px;
-    background: transparent linear-gradient(180deg, #0077AC 0%, #101F33 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 20px #0000000D;
-    color: #319ECE
-}
-
-.card .Submitbtn {
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, 50%);
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px #0000000D;
-}
-
-.card .onewaybtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(19%, -50%);
-    border-radius: 30px;
-    background: #fff;
-    box-shadow: 0px 0px 20px #0000000D;
-    color: #000;
-}
 
 .add_space>li {
     padding-bottom: 10px;
